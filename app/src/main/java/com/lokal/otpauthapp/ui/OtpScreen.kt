@@ -44,11 +44,14 @@ fun OtpScreen(viewModel: AuthViewModel) {
 
 
         state.debugOtp?.let { otpValue ->
+
             Text(
-                text = "DEBUG OTP: $otpValue",
+                text = "DEBUG OTP (for local testing only): $otpValue",
                 color = MaterialTheme.colorScheme.primary,
-                fontSize = 14.sp
+                style = MaterialTheme.typography.bodyMedium
             )
+
+
             Spacer(modifier = Modifier.height(12.dp))
         }
 
